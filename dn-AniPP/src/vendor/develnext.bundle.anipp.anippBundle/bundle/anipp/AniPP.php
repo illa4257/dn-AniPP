@@ -24,7 +24,7 @@ class AniPP
         $s = [];
         $onet = 1/$duration;
         foreach ($vars as $key => $value)
-            $s[$key] = ($value-$object->$key)/($duration/1000);
+            $s[$key] = 1/($duration/($value-$object->$key));
         $dt = new deltaTimer;
         if($curve==null)
             $curve = new Curve;
@@ -34,10 +34,9 @@ class AniPP
             $t += $dt->getDelta();
             if($t>$duration)
                 $t = $duration;
-            $val = $curve->get($t*$onet)-$curve->get($ot*$onet);
-            foreach ($s as $key => $value){
+            $val = ($curve->get($t*$onet)-$curve->get($ot*$onet))*$duration;
+            foreach ($s as $key => $value)
                 $object->$key += $val*$value;
-            }
             if($t>=$duration){
                 if($onEnd)
                     $onEnd();
