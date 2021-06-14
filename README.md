@@ -1,5 +1,9 @@
 # dn-AniPP
-Animation++ for DevelNext
+Animation++ for DevelNext.
+
+---
+
+Api-docs: [English](https://github.com/illa4257/dn-AniPP/blob/master/api-docs/README.md)/[Русский](https://github.com/illa4257/dn-AniPP/blob/master/api-docs/README.ru.md)
 
 ---
 
@@ -9,7 +13,8 @@ Why is it better than Animation?
 
 ![](TSync.gif)
 
-3. Curves.
+3. Curves: Linear (bundle\anipp\Curves\Curve), Ease, Ease in, Ease out, Sqrt, Sqrt in, Sqrt out.
+4. Custom animations.
 
 ---
 

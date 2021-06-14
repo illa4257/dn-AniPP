@@ -8,8 +8,11 @@ class deltaTimer
 
     private $last;
     
-    public function __construct(){
-        $this->last = Time::millis();
+    public function __construct(int $start = null){
+        if($start==null)
+			$this->last = Time::millis();
+        else
+			$this->last = $start;
     }
     
     /**
