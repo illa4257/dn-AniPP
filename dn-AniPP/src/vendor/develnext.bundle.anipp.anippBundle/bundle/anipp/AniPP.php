@@ -1,7 +1,7 @@
 <?php
 namespace bundle\anipp;
 
-use gui, Exception, scripts\deltaTimer, scripts\Curves\Curve;
+use gui, Exception, bundle\anipp\deltaTimer, bundle\anipp\Curves\Curve;
 
 class AniPP 
 {
