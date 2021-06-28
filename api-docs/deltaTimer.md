@@ -7,10 +7,15 @@ Animation++ for DevelNext.
 
 > Delta timer.
 
+### Properties:
+
+#### ->timeScale = 0 : float
+> Speed of time.
+
 ### Methods:
 
-#### ->__construct(int $start = null)
+#### ->__construct(int $start = null, float $timeScale = 1)
 > Constructor
 ---
-#### ->getDelta() : int
+#### ->getDelta() : float
 > Get the interval between updates
