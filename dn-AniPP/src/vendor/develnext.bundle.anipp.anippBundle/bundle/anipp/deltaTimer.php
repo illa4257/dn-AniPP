@@ -5,24 +5,34 @@ use std;
 
 class deltaTimer 
 {
+	/**
+	 * @var float
+	 * Speed of time.
+	 * --RU--
+	 * Скорость времени.
+	 */
+	public $timeScale = 1;
 
-    private $last;
-    
-    public function __construct(int $start = null){
-        if($start==null)
+	private $last;
+
+	public function __construct(int $start = null, float $timeScale = 1){
+		if($start==null)
 			$this->last = Time::millis();
-        else
+		else
 			$this->last = $start;
-    }
-    
-    /**
-     * @return int
-     */
-    public function getDelta(){
-        $l = Time::millis();
-        $d = $l-$this->last;
-        $this->last = $l;
-        return $d;
-    }
+		$this->timeScale = $timeScale;
+	}
 
+	/**
+	 * @return float
+	 * Get time delta.
+	 * --RU--
+	 * Получить дельту времени.
+	 */
+	public function getDelta(){
+		$l = Time::millis();
+		$d = $l-$this->last;
+		$this->last = $l;
+		return $d*$this->timeScale;
+	}
 }

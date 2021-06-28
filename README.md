@@ -13,7 +13,7 @@ Why is it better than Animation?
 
 ![](TSync.gif)
 
-3. Curves: Linear (bundle\anipp\Curves\Curve), Ease, Ease in, Ease out, Sqrt, Sqrt in, Sqrt out.
+3. Curves: Linear (bundle\anipp\Curves\Curve), EaseBack, EaseBackIn, EaseBackOut, EaseBounce, EaseBounceIn, EaseBounceOut, EaseCirc, EaseCircIn, EaseCircOut, EaseCubic, EaseCubicIn, EaseCubicOut, EaseCurve, EaseCurveIn, EaseCurveOut, EaseElastic, EaseElasticIn, EaseElasticOut, EaseExpo, EaseExpoIn, EaseExpoOut, EaseQuart, EaseQuartIn, EaseQuartOut, EaseQuint, EaseQuintIn, EaseQuintOut, EaseSine, EaseSineIn, EaseSineOut, SqrtCurve, SqrtCurveIn & SqrtCurveOut.
 4. Custom animations.
 
 ---
