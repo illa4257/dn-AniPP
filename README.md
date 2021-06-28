@@ -28,3 +28,5 @@ AniPP::smoothlySetValues($this->button, 100, ["opacity"=>0,"rotate"=>360], funct
 }, EaseCurve);
 ```
 
+Project example: https://hub.develnext.org/project/xSNaEnQSMvdy
+
